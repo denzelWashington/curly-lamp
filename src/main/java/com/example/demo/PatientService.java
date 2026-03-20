@@ -1,7 +1,5 @@
 package com.example.demo;
 
-import java.io.Serializable;
-
 public class PatientService{
 
     private final PatientRepository repository;

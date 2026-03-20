@@ -7,18 +7,14 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Optional;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 public class PatientServiceTest {
 
-
     @Mock
     PatientRepository repository;
-
 
     @InjectMocks
     PatientService patientService;
@@ -31,8 +27,6 @@ public class PatientServiceTest {
         assertNotNull(result);
         //assertEquals("John Doe", result.getName());
         verify(repository, times(1)).findById(1L);
-
-
     }
 
 
