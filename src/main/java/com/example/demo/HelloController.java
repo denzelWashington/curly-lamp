@@ -8,13 +8,13 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String hello() {
-        return "Hello MVC";
+        return "Hello MVC 1234";
     }
 
     @GetMapping("/wait")
     public String waitTest() throws InterruptedException {
         Thread.sleep(3000);
-        return "done MVC";
+        return "done test";
     }
 }
 
